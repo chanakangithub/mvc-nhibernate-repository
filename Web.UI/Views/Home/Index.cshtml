@@ -1,0 +1,14 @@
+﻿@model Controllers.ViewModels.ProductView
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<ul>
+    <li><b>Id, Name, Price</b></li>
+    @foreach (var item in Model.productList)
+    { 
+        <li>@item.Id, @item.Name, @item.Price</li>
+    }
+</ul>
